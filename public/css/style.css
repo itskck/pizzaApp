@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+html{
+  scroll-behavior: smooth;
+  
+}
+*{
+  box-sizing: border-box;
+  
+}
+body{
+  
+    background: #ffffff;
+    color: #000000;
+    font-size: 15px;
+    margin: 0;
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+   
+  }
+  #logo{
+      margin-left: 20px;
+      margin-top: 20px;
+      
+      height: 150px;
+      
+  }
+#navlist{
+    width: auto;
+    
+  padding:20px;
+  margin: 0;
+  list-style-type: none;
+  text-align: right;
+  
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: large;
+  text-transform: uppercase;
+}
+.dropParent{
+  position: relative;
+}
+.dropdown{
+  position: absolute;
+  display: none;
+  background: white;
+  right: 0;
+}
+.dropParent:hover .dropdown{
+  display: block;
+}
+li {
+    margin: 0 10px;
+}
+li a{
+  text-decoration: none;
+  display: block;
+  padding: 5px 5px;
+  color:#135f00;
+  transition: color 0.2s;
+  font-size: 25px;
+  padding: 0 15px;
+
+}
+#ulkoszyk{
+ list-style-type: none;
+}
+li a:hover{
+  color: rgb(184, 0, 0);
+}
+footer{
+
+  text-align: center;
+  
+  font-weight: 300;
+  display: flex;
+}
+footer div{
+  flex: 1;
+}
+.bialy{
+  padding: 30px 0;
+  background-color: #fafafa;
+}
+.czerwony{
+  background-color: rgb(184, 0, 0);
+
+}
+.zielony{
+  background-color:#135f00;
+
+}
+
+#hero{
+  background-image: url("../images/pizzahero.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+  width: 100%;
+  margin: 0px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1{
+  font-size: 50px;
+  margin-bottom: 0;
+}
+.light{
+  color: white; 
+  text-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+}
+.dark{
+  color: black;
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 35px;
+}
+h1,h2{
+ 
+  text-align: center;
+ 
+}
+.justified{
+  text-align: justify;
+}
+.mniam{
+ border: none;
+ border-radius: 5px;
+ background-color: #135f00; 
+ padding: 15px 20px;
+ font-size: 24px;
+ color: white;
+ margin-top: 50px;
+ box-shadow:  4px 4px 4px rgba(0,0,0,0.3);
+ cursor: pointer;
+}
+#onas{
+  padding: 100px 40px;
+  display:flex;
+  flex-direction: row;
+  
+  
+}
+#tekstonas{
+  width: 80%;
+  padding: 0 100px;
+
+}
+#fotkaonas{
+  width: 400px;
+  height: 300px;
+}
+.onastitle{
+  font-size: 45px;
+  font-weight: 300;
+}
+#kategorie{
+  display: flex;
+  justify-content: space-evenly;
+  background-color:#135f00 ;
+  padding: 100px;
+}
+.kategoria{
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  
+}
+.kategoria img{
+  background-color: white;
+  border-radius: 50%;
+  border: 5px solid white ;
+  width: 300px;
+  border-radius: 50%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.maintable{
+  width: 100%;
+  border-collapse: collapse;
+}
+.nazwapizzy{
+  font-size: 30px;
+}
+.opispizzy{
+  color: grey;
+  font-size: 20px;
+}
+.maintable .cena{
+  font-size: 30px;
+  text-align: right;
+}
+.maintable tr:nth-child(even){
+  background-color: #f0f0f0;
+}
+.maintable td{
+  text-align: left;
+  padding: 10px;
+}
+.maintable th{
+  font-size: 30px;
+  color: #135f00;
+  text-align: right;
+}
+.menukategoria{
+  font-size: 50px;
+  color: #ffffff;
+  background-color: #135f00;
+}
+#menu{
+  padding: 100px;
+  text-align: center;
+}
+.opinie{
+  margin-bottom: 70px;
+  background-color: #135f00;
+  padding: 40px 0;
+}
+.mniam2{
+  margin-top: 0;
+
+}
+h3{
+  color: #135f00;
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.kupowanko{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+   
+  padding: 60px 0;
+}
+.lewy{
+  display: flex;
+  flex-direction: column;
+  border: solid 1px black;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 150px;
+  max-height: 120px;
+}
+#guzik
+{
+  margin-top: auto;
+}
+.rozmiar{
+  margin-bottom: auto;
+}
+.pizzagen{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.dostawaguziki {
+  text-align: center;
+}
+
+.dostawawiersz {
+  padding: 10px 0;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+}
+.dostawawiersz label {
+  width: 200px;
+}
+.dostawa input {
+  padding: 5px;
+  width: 300px;
+}
+#ulkoszyk
+{
+  display: flex;
+  flex-direction: row;
+}
+#koszyk{
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+#koszyk-przerwa {
+  flex-grow: 1;
+}
+#koszyk-przedmioty{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#saldomanagment {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#profil fieldset{
+  border-radius: 15px;
+}
+#profil fieldset legend{
+  font-weight: 400;
+  
+}
+#historia fieldset{
+  max-height: 300px;
+  overflow-y: auto;
+ 
+  border-bottom-right-radius: 0px;
+}
+.wplacbutton{
+  width: auto;
+}
+#koszyk-zamow {
+  border: none;
+  background-color: #135f00;
+  font-size: 20px;
+  padding: 15px 0;
+  color: #fff;
+  cursor: pointer;
+  width: 50%;
+  border-right: 1px solid black;
+}
+#koszyk-koszt{
+  text-align: right;
+}
+#profil{
+  gap: 100px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 200px;
+  align-items: center;
+}
+#profil button{
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+  
+ 
+}
+#profil button:hover{
+  background-color: transparent;
+  border: 2px solid rgb(184, 0, 0);
+  color: black;
+  cursor: pointer;
+ 
+}
+#addKategoriaTD{
+  vertical-align: top;
+}
+
+.przedmiot {
+  background-color: #eee;
+  padding: 10px;
+}
+#dostawa-zapisz{
+  margin-right: 10px;
+}
+#kontakt{
+  display: flex;
+  flex-direction: row;
+  
+
+}
+#mapka{
+  width: 50%;
+  text-align: center;
+}
+#therealdanekontaktowe{
+  display: flex;
+}
+#therealdanekontaktowe div{
+  flex: 1;
+}
+#kontaktadres{
+  border-right: solid 1px black;
+  /* width: 33%; */
+}
+#kontakttelefon{
+  border-right: solid 1px black;
+  /* width: 33%; */
+}
+.darkAleMaly{
+  color: black;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 20px;
+}
+.mniam3{
+  border: none;
+ border-radius: 20px;
+ background-color: #135f00; 
+ padding: 5px 10px;
+ font-size: 15px;
+ color: white;
+ margin-top: 50px;
+ box-shadow:  4px 4px 4px rgba(0,0,0,0.3);
+ cursor: pointer;
+ margin-top: 0;
+
+}
+@media (max-width: 900px){
+  nav{
+    flex-direction: column;
+    
+  }
+  #navlist{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  #onas{
+    flex-direction: column;
+    align-items: center;
+  }
+  #fotkaonas{
+    width: 90%;
+    height: unset;
+    flex-basis: unset;
+    
+  }
+  #tekstonas{
+    width: 100%;
+    padding: 0px;
+    text-align: center ;
+  }
+  .justified{
+    text-align: center;
+  }
+  #kategorie
+  {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .kategoria img{
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid white ;
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .kategoria{
+    font-size: 20px;
+  }
+  .onastitle .onasopis{
+    font-size: 10px;
+  }
+  #hero{
+    background-attachment: scroll;
+    background-position: center center;
+  }
+  .menukategoria,.nazwapizzy,.cena,.kategoria, .opispizzy{
+    font-size: 15px;
+  }
+  .maintable th, .maintable .cena{
+    font-size: 15px;
+  }
+  #menu{
+    padding: 1px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  /*ZAMOWIENIA*/
+
+  #kupowanko{
+    flex-direction: column;
+    flex-grow: 1;
+    
+  }
+  #koszyk{
+    width: 100%;
+
+  }
+  .koszyk-przedmioty{
+    padding: 50px;
+    
+  }
+ 
+  /*KONTAKT*/
+  
+
+  .lewy{
+    border-radius: 0px;
+  }
+  #kontakt{
+    flex-direction: column;
+  }
+  iframe, #mapka{
+    width: 100%;
+  }
+  #therealdanekontaktowe{
+    flex-direction: column;
+  }
+  #kontaktadres{
+    border-right: none;
+    /* width: 33%; */
+  }
+  #kontakttelefon{
+    border-right: none;
+    /* width: 33%; */
+  }
+  .placeholder{
+    font-weight: 700;
+  }
+  .container{
+    text-align: center;
+  }
+}
+
